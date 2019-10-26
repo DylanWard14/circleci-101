@@ -8,6 +8,6 @@ it('renders without crashing', () => {
   ReactDOM.unmountComponentAtNode(div);
 });
 
-it('fails', () => {
-  throw new Error('Auto fail!');
-})
+// it('fails', () => {
+//   throw new Error('Auto fail!');
+// })
