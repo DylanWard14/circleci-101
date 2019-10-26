@@ -10,6 +10,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload. This is an edit the the application.
         </p>
+        <p>This change should no be displayed because the test is going to fail</p>
         <a
           className="App-link"
           href="https://reactjs.org"
