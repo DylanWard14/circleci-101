@@ -2,23 +2,9 @@
  jobs:
    one:
      docker:
-       - image: circleci/ruby:2.4.1
+       - image: circleci/node:10.16.3
      steps:
        - checkout
        - run: echo "running tests"
        - run: npm install
        - run: npm run test
-   two:
-     docker:
-       - image: circleci/ruby:2.4.1
-     steps:
-       - checkout
-       - run: echo "starting dev server"
-       - run: npm install
-       - run: npm start
- workflows:
-   version: 2
-   one_and_two:
-     jobs:
-       - one
-       - two
