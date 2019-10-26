@@ -8,4 +8,3 @@
        - run: echo "running tests"
        - run: npm install
        - run: npm run test
-       - run: npm start
