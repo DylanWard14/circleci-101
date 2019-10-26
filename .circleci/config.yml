@@ -4,7 +4,9 @@ jobs:
     docker:
       - image: circleci/node:10.16.3
     steps:
-      - run: echo "this is the build step"
+      - run: echo "this is the test step"
+      - run: npm install
+      - run: npm run test
   deploy:
     docker:
       - image: buildpack-deps:trusty
